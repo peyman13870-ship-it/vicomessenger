@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>درباره ما - Vi Co</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {margin:0;font-family:'Vazirmatn',sans-serif;background: linear-gradient(135deg,#1b1b2f,#162447,#1f4068);color:white;text-align:center;padding:50px;}
+nav {display:flex;justify-content:space-between;padding:20px 50px;background:rgba(0,0,0,0.5);}
+nav a {text-decoration:none;color:white;margin-left:25px;font-weight:700;transition:0.3s;}
+nav a:hover { color:#ffd700; }
+
+.features {display:flex;justify-content:space-around;flex-wrap:wrap;padding:50px 20px;}
+.feature-box {background:rgba(255,255,255,0.05);width:250px;margin:20px;padding:30px;border-radius:25px;text-align:center;transition:0.4s; transform:translateY(50px); opacity:0;}
+.feature-box:hover { transform:translateY(-10px); box-shadow:0 0 40px #ffd700; }
+.feature-box i { font-size:50px; margin-bottom:20px; color:#ffd700; }
+.feature-box h3 { margin-bottom:15px; font-size:22px; }
+.feature-box p { font-size:16px; opacity:0.8; }
+
+.feature-box:nth-child(1){animation:fadeFeature 0.5s 0.2s forwards;}
+.feature-box:nth-child(2){animation:fadeFeature 0.5s 0.4s forwards;}
+.feature-box:nth-child(3){animation:fadeFeature 0.5s 0.6s forwards;}
+.feature-box:nth-child(4){animation:fadeFeature 0.5s 0.8s forwards;}
+
+@keyframes fadeFeature {0% { transform:translateY(50px); opacity:0; } 100% { transform:translateY(0); opacity:1; }}
+
+footer { text-align:center; padding:20px; background: rgba(0,0,0,0.3);}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo" style="font-weight:bold;font-size:28px;color:#ffd700;">Vi Co</div>
+<div>
+<a href="index.html">خانه</a>
+<a href="download.html">دانلود</a>
+<a href="about.html">درباره ما</a>
+</div>
+</nav>
+
+<h1>درباره Vi Co</h1>
+
+<section class="features">
+<!-- ارتباط با ما -->
+<div class="feature-box">
+<i class="fa-solid fa-phone"></i>
+<h3>ارتباط با ما</h3>
+<p>۰۹۱۹۷۶۶۹۷۲۵</p>
+</div>
+
+<!-- ویژگی دوم -->
+<div class="feature-box">
+<i class="fa-solid fa-rocket"></i>
+<h3>مدرن و سریع</h3>
+<p>طراحی به‌روز و تجربه کاربری روان و سریع</p>
+</div>
+
+<!-- ویژگی سوم -->
+<div class="feature-box">
+<i class="fa-solid fa-shield"></i>
+<h3>امنیت مطمئن</h3>
+<p>پیام‌ها و داده‌ها کاملاً محافظت شده و خصوصی باقی می‌مانند</p>
+</div>
+
+<!-- ویژگی چهارم -->
+<div class="feature-box">
+<i class="fa-solid fa-users"></i>
+<h3>چت گروهی و فردی(در صورت وصل بودن به یک وای فای)</h3>
+<p>ارتباط با دوستان , در محل کار , مخصوص دفاتر خدماتی</p>
+</div>
+</section>
+
+<footer>© 2026 Vi Co | ساخته شده توسط پیمان</footer>
+</body>
+</html>

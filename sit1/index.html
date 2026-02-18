@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vi Co - خانه</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+    margin:0;
+    font-family:'Vazirmatn',sans-serif;
+    background: linear-gradient(135deg,#1b1b2f,#162447,#1f4068);
+    color:white;
+    overflow-x:hidden;
+}
+nav {display:flex;justify-content:space-between;padding:20px 50px;background:rgba(0,0,0,0.5);box-shadow:0 4px 20px rgba(0,0,0,0.4);}
+nav a {text-decoration:none;color:white;margin-left:25px;font-weight:700;transition:0.3s;}
+nav a:hover { color:#ffd700; }
+
+header {text-align:center;padding:80px 20px;}
+header h1 { font-size:55px;margin-bottom:20px;text-shadow: 2px 2px 15px #000; animation:fadeDown 1s ease forwards; opacity:0; }
+header p { font-size:22px; opacity:0.9;margin-bottom:40px; animation:fadeDown 1s 0.3s ease forwards; opacity:0; }
+button { padding:18px 45px;font-size:20px;border:none;border-radius:50px;background:#ffd700;color:#1b1b2f;cursor:pointer;transition:0.3s;box-shadow:0 5px 25px rgba(0,0,0,0.5);}
+button:hover { transform: scale(1.1); box-shadow:0 0 50px #ffd700; }
+
+.features {display:flex;justify-content:space-around;flex-wrap:wrap;padding:50px 20px;}
+.feature-box {background:rgba(255,255,255,0.05);width:250px;margin:20px;padding:30px;border-radius:25px;text-align:center;transition:0.4s; transform:translateY(50px); opacity:0;}
+.feature-box:hover { transform:translateY(-10px); box-shadow:0 0 40px #ffd700; }
+.feature-box i { font-size:50px; margin-bottom:20px; color:#ffd700; }
+.feature-box h3 { margin-bottom:15px; font-size:22px; }
+.feature-box p { font-size:16px; opacity:0.8; }
+
+.windows-note {text-align:center;background:rgba(255,255,255,0.1);padding:15px 20px;border-radius:15px;font-weight:bold;margin:30px 0;color:#ffd700;font-size:18px;}
+
+footer { text-align:center; padding:20px; background: rgba(0,0,0,0.3); }
+
+@keyframes fadeDown {
+  0% { transform: translateY(-50px); opacity:0; }
+  100% { transform: translateY(0); opacity:1; }
+}
+
+.feature-box:nth-child(1){animation:fadeFeature 0.5s 0.2s forwards;}
+.feature-box:nth-child(2){animation:fadeFeature 0.5s 0.4s forwards;}
+.feature-box:nth-child(3){animation:fadeFeature 0.5s 0.6s forwards;}
+.feature-box:nth-child(4){animation:fadeFeature 0.5s 0.8s forwards;}
+
+@keyframes fadeFeature {
+  0% { transform:translateY(50px); opacity:0; }
+  100% { transform:translateY(0); opacity:1; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo" style="font-weight:bold;font-size:28px;color:#ffd700;">Vi Co</div>
+<div>
+<a href="index.html">خانه</a>
+<a href="download.html">دانلود</a>
+<a href="about.html">درباره ما</a>
+</div>
+</nav>
+
+<header>
+<h1>Vi Co Messenger</h1>
+<p>پیام‌رسان سریع، امن و مدرن</p>
+<a href="download.html"><button><i class="fa-solid fa-cloud-arrow-down"></i> دانلود پیام‌رسان</button></a>
+</header>
+
+<div class="windows-note">
+⚠️ این اپلیکیشن فقط روی ویندوز اجرا می‌شود
+</div>
+
+<section class="features">
+<div class="feature-box">
+<i class="fa-solid fa-bolt"></i>
+<h3>سرعت بالا</h3>
+<p>ارسال و دریافت پیام‌ها در سریع‌ترین زمان ممکن</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-lock"></i>
+<h3>امنیت بالا</h3>
+<p>تمام پیام‌ها رمزگذاری شده و خصوصی باقی می‌مانند</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-user-friends"></i>
+<h3>ارتباط با دوستان</h3>
+<p>چت با دوستان متصل به یک وای فای در محل کار</p>
+</div>
+
+<div class="feature-box">
+<i class="fa-solid fa-cloud-arrow-down"></i>
+<h3>دانلود آسان</h3>
+<p>دانلود و نصب راحت روی ویندوز با یک کلیک</p>
+</div>
+</section>
+
+<footer>© 2026 Vi Co | ساخته شده توسط پیمان</footer>
+</body>
+</html>
